@@ -1,0 +1,20 @@
+.body{
+      display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  min-height: 100vh; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.game{
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 20rem;
+    height: 20rem;
+}
+    
