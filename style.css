@@ -33,7 +33,21 @@ button{
     font-size: clamp(.5rem, 3rem, 4rem);
     background-color: white;
     user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
 }
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+button:active {
+    background-color: #e0e0e0;
+    transform: translateY(1px);
+}
+
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,6 +85,8 @@ button{
     }
     button{
         font-size: clamp(1vw, 2rem, 4rem);
+        min-height: 44px;
+        min-width: 120px;
     }
     .game.win p{
         font-size: clamp(1vw, 1.4rem, 1.7rem);
