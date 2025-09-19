@@ -140,6 +140,7 @@ function restartGame(){
 
 document.querySelectorAll('.game').forEach((cell, index) => {
     cell.addEventListener('click', () => {
+        if (game.isGameOver() == true) {return;}
                 
         const success = game.turn(index, "human");
         
