@@ -69,7 +69,7 @@ button:focus {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: clamp(2px, 0.5vw, 8px);
-    border-radius: (4px, 1vw, 12px);
+    border-radius: clamp(4px, 1vw, 12px);
     background-color: #333;
     padding: clamp(2px, 0.5vw, 6px);
     width: min(90vw, min(90vh, 600px));
@@ -83,6 +83,7 @@ button:focus {
     border-radius: clamp(2px, 0.5vw, 6px);
     background-color: white;
     aspect-ratio: 1;
+    
 }
 
 .game p {
