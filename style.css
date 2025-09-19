@@ -9,8 +9,30 @@ body{
     align-items: center;    
     min-height: 100vh;
     padding: 1rem; 
+    flex-direction: column;
+    gap: clamp(8px, 1rem, 3rem);
+    padding: clamp(2px, 0.5vh, 6px);
 }
-
+.top{
+    display: flex;
+    font-size: clamp(.5rem, 2rem, 4rem);
+    width: min(90vw, min(90vh, 600px));
+    justify-content: center;
+    padding: clamp(2px, 0.5vh, 6px);
+    flex-wrap: nowrap;
+}
+.bottom{
+    display: flex;
+    font-size: clamp(.5rem, 2rem, 4rem);
+    width: min(90vw, min(90vh, 400px));
+    justify-content: center;
+    padding: clamp(2px, 0.5vh, 6px);
+}
+button{
+     padding: clamp(2px, 0.5vh, 6px);
+    font-size: clamp(.5rem, 3rem, 4rem);
+    background-color: white;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -43,10 +65,21 @@ body{
     .container {
     width: min(95vw, 95vh);
     }
+    .top{
+        font-size: clamp(1vw, 1.4rem, 4rem);
+    }
+    button{
+        font-size: clamp(1vw, 2rem, 4rem);
+    }
 }
 
 @media (min-width: 1200px) {
     .container {
-    width: min(50vw, 800px);
+    width: min(50vw, 700px);
     }
 }
+
+        .game-disabled {
+            pointer-events: none;
+            opacity: 0.7;
+        }
